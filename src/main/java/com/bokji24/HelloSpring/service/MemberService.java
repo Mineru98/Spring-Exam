@@ -2,8 +2,6 @@ package com.bokji24.HelloSpring.service;
 
 import com.bokji24.HelloSpring.domain.Member;
 import com.bokji24.HelloSpring.repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -22,7 +20,7 @@ public class MemberService {
      * @param member
      * @return
      */
-    public long join(Member member) {
+    public Long join(Member member) {
         // 같은 이름이 있는 중복 회원 X
         validateDuplicateMember(member);
         memberRepository.save(member);

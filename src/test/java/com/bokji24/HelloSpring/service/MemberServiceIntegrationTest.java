@@ -2,7 +2,6 @@ package com.bokji24.HelloSpring.service;
 
 import com.bokji24.HelloSpring.domain.Member;
 import com.bokji24.HelloSpring.repository.MemberRepository;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,7 @@
 package com.bokji24.HelloSpring.repository;
 
 import com.bokji24.HelloSpring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
@@ -32,7 +33,6 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
     }
 
-    @Override
     public void clearStore() {
         store.clear();
     }

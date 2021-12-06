@@ -1,6 +1,7 @@
 package com.bokji24.HelloSpring;
 
 import com.bokji24.HelloSpring.repository.JdbcMemberRepository;
+import com.bokji24.HelloSpring.repository.JdbcTemplateMemberRepository;
 import com.bokji24.HelloSpring.repository.MemberRepository;
 import com.bokji24.HelloSpring.repository.MemoryMemberRepository;
 import com.bokji24.HelloSpring.service.MemberService;
@@ -28,6 +29,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
